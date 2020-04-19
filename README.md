@@ -1,27 +1,24 @@
-# AngularDockerNginx
+# Description 
+使用 Docker 建立 Angualr with Nginx 的映像檔案，建立出 Container 建置 Angular 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+# Environment 
+- Node: 10.16.0
+- Angular: 8.0.3
+- Docker: 2.2.0.5 
+- Docker Nginx Image: 1.17.10
+- Alpine: 3.11.5
 
-## Development server
+# Commands 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1.  建立 Docker image 
+docker build -t "Docker Image Name" .
 
-## Code scaffolding
+2. 列出 docker imgaes 
+docker image ls 
+![List images](https://imgur.com/cmlinO5.jpg)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3.  建立 Container
+docker run -p 3000:80 -it 74976fa41489
 
-## Build
+Open browser localhost:3000 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
