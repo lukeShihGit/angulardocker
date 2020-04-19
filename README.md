@@ -22,3 +22,5 @@ docker run -p 3000:80 -it 74976fa41489
 
 Open browser localhost:3000 
 
+docker pull lukeshih/angulardocker
+
